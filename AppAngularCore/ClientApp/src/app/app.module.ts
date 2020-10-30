@@ -1,9 +1,11 @@
+//Rutas
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
+//Componentes
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +14,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ChatComponent } from './chat/chat.component';
 import { BasicoComponent } from './basico/basico.component';
 import { MensajesComponent } from './mensajes/mensajes.component';
+
+//Servicios
 import { ChatserviceService } from './services/chatservice.service';
 
 @NgModule({
