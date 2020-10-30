@@ -1,0 +1,28 @@
+<!--
+    -- FORMULARIO FORMCONTROL SOLICITUD POST
+    -- Obtiene Mensajes desde chatService
+    -- Obtiene los mensajes en etiqueta app-mensajes del componente mensajes.component
+    -- Recorre con ngFor los elementos del ObjMensaje y almacena en en LstElementos
+    -- #viewText invoca Elemento Focus con viewChild para ubicar el puntero en la caja de texto
+    -- Etiquetas formControl implementar ReactiveFormsModule en el aap.module
+    -- Ejecuta evento AddEnvio() en chat.component.js
+-->
+{{chatService.Message}}
+<br /><br />
+
+<input type="text" [formControl]="nombreControl" />
+<input #viewText type="text" [formControl]="textoControl" />
+
+<input type="button" (click)="AddEnvio()" value="Enviar" />
+
+<br /><br />
+{{chatService.Chat}}
+<br /><br />
+
+
+<!--Se recorren elementos de la lista y se almacenan en la variable texto-->
+<app-mensajes *ngFor="let elemento of LstElementos | async" [ObjMensaje]="elemento">
+</app-mensajes>
+
+
+
