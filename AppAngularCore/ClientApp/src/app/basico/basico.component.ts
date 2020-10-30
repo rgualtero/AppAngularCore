@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { strictEqual } from 'assert';
 
 @Component({
   selector: 'app-basico',
@@ -9,6 +8,7 @@ import { strictEqual } from 'assert';
 export class BasicoComponent implements OnInit {
 
   public nombre = "Ronald Gualtero";
+  public hobby = "Deportes";
   public ListaElementos: string[] = ["ElementoUno", "ElementoDos", "ElementoTres","ElementoCuatro"];
 
   constructor() { }
